@@ -9,7 +9,7 @@
 
 <body>
 
-    <div style="color:rgb(0, 217, 255)">
+    <div style="color:rgb(14, 247, 255)">
         <form action="{{ url_for('predict')}}" method="post">
             <h2>Household Electricity Price Prediction</h2>
             <h3>How many rooms?</h3>
@@ -18,20 +18,20 @@
             <input id="second" name="people" required="required" type="number">
             <h3>What is the area (m^2) of your home?</h3><br>
             <input id="third" name="area" required="required">
-            <h3>Do you have an airconditioning unit?</h3><br>
+            <h3>Do you frequently use an airconditioning unit?</h3><br>
             <select name="ac" id="fourth" required="required">
                 <option value="ac_yes">Yes</option>
                 <option value="ac_no">No</option>
             </select>
-            <h3>Do you have a television?</h3><br>
+            <h3>Do you frequently use electronics?</h3><br>
             <select name="television" id="fifth" required="required">
                 <option value="tv_yes">Yes</option>
                 <option value="tv_no">No</option>
             </select>
             <h3>Do you live in an apartment?</h3><br>
             <select name="apartment" id="sixth" required="required">
-                <option value="apartment_yes">yes</option>
-                <option value="apartment_no">no</option>
+                <option value="apartment_yes">Yes</option>
+                <option value="apartment_no">No</option>
             </select>
             <h3>What is your average monthly income?</h3><br>
             <input id="seventh" name="income" required="required">
@@ -65,9 +65,10 @@
             background-color: rgb(30, 32, 6);
             text-align: center;
             padding: 0px;
+            background-image: url('https://img.freepik.com/premium-vector/landscape-with-electricity-pylons-power-lines-sunset-industrial-landscape-concept_598586-11.jpg');
         }
         
-        #research {
+        #ninth {
             font-size: 18px;
             width: 100px;
             height: 23px;
@@ -92,7 +93,7 @@
             font-size: 14px;
         }
         
-        #fuel {
+        #fifth {
             width: 83px;
             height: 43px;
             text-align: center;
@@ -100,11 +101,11 @@
             font-size: 20px;
         }
         
-        #fuel:hover {
-            background-color: coral;
+        #fifth:hover {
+            background-color: rgb(5, 98, 236);
         }
         
-        #research {
+        #ninth {
             width: 99px;
             height: 43px;
             text-align: center;
@@ -112,11 +113,11 @@
             font-size: 18px;
         }
         
-        #research:hover {
-            background-color: coral;
+        #ninth:hover {
+            background-color: rgb(5, 98, 236);
         }
         
-        #resea {
+        #sixth {
             width: 99px;
             height: 43px;
             text-align: center;
@@ -124,8 +125,8 @@
             font-size: 18px;
         }
         
-        #resea:hover {
-            background-color: coral;
+        #sixth:hover {
+            background-color: rgb(5, 98, 236);
         }
         
         #sub {
@@ -162,11 +163,18 @@
         }
         
         #fourth {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
+            width: 99px;
+            height: 43px;
             text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
         }
+        
+        #fourth:hover {
+            background-color: rgb(5, 98, 236);
+        }
+
+    
     </style>
 </body>
 

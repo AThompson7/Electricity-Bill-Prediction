@@ -6,7 +6,7 @@ import numpy as np
 import sklearn
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+model = pickle.load(open('extra_trees_regression_model.pkl', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
@@ -47,7 +47,7 @@ def predict():
         if output<0:
             return render_template('index.html',prediction_texts="Sorry you cannot sell this car")
         else:
-            return render_template('index.html',prediction_text="Your electricity bill will be ${}".format(output))
+            return render_template('index.html',prediction_text="Your approximate monthly electricity bill will be ${}".format(output))
     else:
         return render_template('index.html')
 
