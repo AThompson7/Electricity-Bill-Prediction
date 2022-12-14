@@ -9,7 +9,7 @@
 
 <body>
 
-    <div style="color:rgb(14, 247, 255)">
+    <div style="color:rgb(255, 255, 255)">
         <form action="{{ url_for('predict')}}" method="post">
             <h2>Household Electricity Price Prediction</h2>
             <h3>How many rooms?</h3>
@@ -33,7 +33,7 @@
                 <option value="apartment_yes">Yes</option>
                 <option value="apartment_no">No</option>
             </select>
-            <h3>What is your average monthly income?</h3><br>
+            <h3>What is your average monthly income? (Rs)</h3><br>
             <input id="seventh" name="income" required="required">
             <h3>How many children do you have?</h3><br>
             <input id="eighth" name="children" required="required" type="number">
